@@ -10,7 +10,7 @@ const GifGrid = ({ category }) => {
   const { data: gifs, error, loading } = useFetchGifs(category)
 
   return (
-    <>
+    <div className="animate__animated animate__fadeInDownBig animate__delay-2s">
       <h3>{category}</h3>
       {  loading &&  <p>Cargando ...</p> }
       { error && <p>ocurrio un error cargando los gifs</p>}
@@ -22,7 +22,7 @@ const GifGrid = ({ category }) => {
           />
         ))}
       </div>
-    </>
+    </div>
   )
 }
 
