@@ -5,9 +5,55 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 60px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+input {
+  width: 100%;
+  font-size: 1em;
+  color: gray;
+  border-radius: 5px;
+  padding: 8px;
+  border: 1px solid #d4d4d4;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 15px;
+}
+
+.card {
+  align-content: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.card-image {
+  flex: 1;
+}
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 760px) {
+  .card-grid {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(6, auto);
+  }
 }
