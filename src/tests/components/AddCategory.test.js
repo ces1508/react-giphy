@@ -46,6 +46,8 @@ describe('<AddCategory />', () => {
     const inputAfterSubmit = wrapper.find('input')
     expect(inputAfterSubmit.prop('value')).toBe('')
     expect(setCategories).toHaveBeenCalled()
+    expect(setCategories).toBeCalledTimes(1)
+    expect(setCategories).toBeCalledWith(expect.any(Function))
 
   })
 
