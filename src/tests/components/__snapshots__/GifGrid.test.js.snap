@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GifGrid /> <GifGrid /> should be rendered 1`] = `
+<div
+  className="animate__animated animate__fadeInDownBig animate__delay-2s"
+>
+  <h3>
+    goku
+  </h3>
+  <p>
+    Cargando ...
+  </p>
+  <div
+    className="card-grids"
+  />
+</div>
+`;
+
+exports[`<GifGrid /> <GifGrid /> should have a p tag when useFetchGifs return an error 1`] = `
+<div
+  className="animate__animated animate__fadeInDownBig animate__delay-2s"
+>
+  <h3>
+    goku
+  </h3>
+  <p>
+    ocurrio un error cargando los gifs
+  </p>
+  <div
+    className="card-grids"
+  />
+</div>
+`;
+
+exports[`<GifGrid /> <GifGrid /> should have items when data is loaded 1`] = `
+<div
+  className="animate__animated animate__fadeInDownBig animate__delay-2s"
+>
+  <h3>
+    goku
+  </h3>
+  <div
+    className="card-grids"
+  >
+    <GifGridItem
+      id={1}
+      key="1"
+      title="first gift"
+      url="https://someimage/image.gif"
+    />
+  </div>
+</div>
+`;
