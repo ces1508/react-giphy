@@ -1,4 +1,4 @@
-import getGifs from '../../../helpers/getGifs'
+import getGifs from '../../helpers/getGifs'
 
 describe('test on helper/getGifts', () => {
   it ('should be return 10 images', async () => {

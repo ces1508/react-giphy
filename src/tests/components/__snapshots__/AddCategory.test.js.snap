@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddCategory /> <AddCategory /> should be rendered 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    onChange={[Function]}
+    placeholder="Naruto, One Punch Man, Lol"
+    type="text"
+    value=""
+  />
+</form>
+`;

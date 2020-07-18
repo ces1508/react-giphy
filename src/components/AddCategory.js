@@ -12,7 +12,6 @@ function AddCategory ({ setCategories }) {
 
   const handleSubmit = e => {
     e.preventDefault()
-
     if (!inputValue) return;
 
     setCategories(cats => [inputValue, ...cats])
